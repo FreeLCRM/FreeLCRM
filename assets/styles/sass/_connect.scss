@@ -75,33 +75,156 @@
   cursor: pointer;
   margin-left: 75px;
   margin-top: 30px;
+  font-size: 14px;
   &:hover{
     background-color: #7a8df5;
   }
 }
 
 .bottom-form{
-  justify-content: center;
   display: flex;
+  position: absolute;
+  width: 385px;
+  height: 45px;
+  margin-top: 29px;
+  margin-left: -30px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #EFEEF8;
+  justify-content: center;
+}
   a{
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 15px;
     color: #5E77FF;
     &:hover{
       color: #7590ff;
     }
   }
-}
+
 
 .btn-css-input-signup{
-  width: 325;
+  width: 325px;
   height: 48px;
   background-color: #5E77FF;
   border-radius: 4px;
   color: white;
   cursor: pointer;
   margin-top: 30px;
+  font-size: 14px;
   &:hover{
     background-color: #7a8df5;
+  }
+}
+
+.checkbox-input{
+  text-align: center;
+}
+
+
+.input-inscription{
+  width: 385px;
+  height: 543px;
+  background-color: white;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 8px;
+  display: flex;
+  h1{
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    padding-top: 30px;
+  }
+}
+
+.form-grid{
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+}
+
+.bottom-form-inscription{
+  display: flex;
+  position: absolute;
+  width: 385px;
+  height: 45px;
+  margin-top: 75px;
+  margin-left: 0px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #EFEEF8;
+  justify-content: center;
+}
+
+.checkbox-custom {
+  position: absolute;
+  opacity: 0;
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#9B9B9B;
+    margin-top: -2px;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: #5E77FF;
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: #5E77FF;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checked
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+    transform: rotate(45deg);
   }
 }
