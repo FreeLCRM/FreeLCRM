@@ -18,7 +18,7 @@ define("PATH", substr($_SERVER['PHP_SELF'], 0,-9));
 
 // DataBase info
 
-define("DATABASE_HOST", "localhost:33");
-define("DATABASE_NAME", "teletubbies");
+define("DATABASE_HOST", "localhost:8889");
+define("DATABASE_NAME", "ft4");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD", "root");
