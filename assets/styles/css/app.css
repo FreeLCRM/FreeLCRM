@@ -92,3 +92,45 @@ table {
 .input-connexion {
   margin: auto;
 }
+
+/* line 34, ../sass/_connect.scss */
+.input-css-text {
+  width: 325px;
+  height: 40px;
+  border: 1px solid #EFEEF8 !important;
+  border-radius: 4px;
+  background-color: #EFEEF8;
+  padding-left: 10px;
+  font-family: roboto, sans-serif;
+}
+
+/* line 44, ../sass/_connect.scss */
+.label-css-input {
+  font-size: 14px;
+  font-family: roboto, sans-serif;
+  font-weight: lighter;
+  display: block;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+/* line 53, ../sass/_connect.scss */
+.input-css-text-link {
+  text-decoration: none;
+  color: #5E77FF;
+  font-family: roboto, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+/* line 61, ../sass/_connect.scss */
+.btn-css-input {
+  width: 130px;
+  height: 48px;
+  background-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-left: 75px;
+  margin-top: 30px;
+}

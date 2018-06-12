@@ -12,13 +12,13 @@
         <div class="input-connexion">
             <form action="#">
 
-                <label for="fname">Mail</label><br>
-                <input class="input-" type="text" name="fname" placeholder="john@gmail.com"><br>
+                <label class="label-css-input" for="fname">Mail</label>
+                <input class="input-css-text" type="text" name="fname" placeholder="exemple@gmail.com"><br>
 
-                <label for="lname">Mot de passe</label><br>
-                <input type="password" name="lname"><br>
-
-                <button type="submit">Connexion</button>
+                <label class="label-css-input" for="lname">Mot de passe</label>
+                <input class="input-css-text" type="password" name="lname"><br>
+                <a class="input-css-text-link" href="#">Mot de passe oublié ?</a>
+                <button class="btn-css-input" type="submit">Connexion</button>
             </form>
         </div>
     </div>
