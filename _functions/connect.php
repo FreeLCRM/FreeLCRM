@@ -22,7 +22,7 @@ class Bdd
             {
                 $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION; // ATTR_ERRMODE = rapport d'erreur
                 // ERMMODE_EXCEPTION sa va nous donner les exception
-                self::$pdoconnect = new PDO('mysql:dbname=APP_DB_NAME;host=APP_DB_HOST:APP_DB_PORT','APP_DB_USER','APP_DB_PSWD', $pdo_options);
+                self::$pdoconnect = new PDO('mysql:dbname=teletubbies;host=localhost:33','root','root', $pdo_options);
                 self::$pdoconnect->exec("SET NAMES UTF8");
             }
             catch(PDOException $exception)
