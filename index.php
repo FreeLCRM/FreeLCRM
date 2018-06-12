@@ -24,6 +24,14 @@ if (isset($_GET['page']) AND !empty($_GET['page'])){
     $page = 'home';
 }
 
+include_once '_classes/Client.php';
+include_once '_classes/Projet.php';
+$var = new Client(1);
+
+var_dump($var);
+exit;
+
+
 //scandir = scan tt les fichers dans un dossier
 $allPages = scandir('controllers/');
 
