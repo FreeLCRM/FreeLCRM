@@ -23,3 +23,4 @@ if (in_array($page.'_controller.php',$allPages)){
 } else {
     echo 'Erreur 404';
 }
+
