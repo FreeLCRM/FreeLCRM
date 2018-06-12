@@ -1,10 +1,21 @@
 <?php
 
-include_once '_config/config.php';
-include_once '_config/db.php';
-var_dump ($db);
+session_start();
+
+require_once "_functions/connect.php";
+
+//var_dump ($db);
 
 //definition of the current page
+
+if(!isset($_SESSION["pseudo"])) {
+    header("Location: connexion.php");
+    die();
+}
+
+
+
+
 
 if (isset($_GET['page']) AND !empty($_GET['page'])){
     $page = trim(strtolower($_GET['page'])); //if HOME uppercase need lo towercase + delete blank space
@@ -23,3 +34,4 @@ if (in_array($page.'_controller.php',$allPages)){
 } else {
     echo 'Erreur 404';
 }
+
