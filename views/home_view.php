@@ -10,6 +10,7 @@
     </div>
     <div class="connexion-block">
         <div class="input-connexion">
+            <h1>Connexion</h1>
             <form action="#">
 
                 <label class="label-css-input" for="fname">Mail</label>
@@ -20,6 +21,9 @@
                 <a class="input-css-text-link" href="#">Mot de passe oublié ?</a>
                 <button class="btn-css-input" type="submit">Connexion</button>
             </form>
+            <div class="bottom-form">
+                <a href="#">Nouveau ? Inscrivez-vous !</a>
+            </div>
         </div>
     </div>
 </div>

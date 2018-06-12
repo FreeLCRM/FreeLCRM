@@ -92,8 +92,14 @@ table {
 .input-connexion {
   margin: auto;
 }
+/* line 32, ../sass/_connect.scss */
+.input-connexion h1 {
+  text-align: center;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+}
 
-/* line 34, ../sass/_connect.scss */
+/* line 39, ../sass/_connect.scss */
 .input-css-text {
   width: 325px;
   height: 40px;
@@ -104,7 +110,7 @@ table {
   font-family: roboto, sans-serif;
 }
 
-/* line 44, ../sass/_connect.scss */
+/* line 49, ../sass/_connect.scss */
 .label-css-input {
   font-size: 14px;
   font-family: roboto, sans-serif;
@@ -114,7 +120,7 @@ table {
   padding-top: 14px;
 }
 
-/* line 53, ../sass/_connect.scss */
+/* line 58, ../sass/_connect.scss */
 .input-css-text-link {
   text-decoration: none;
   color: #5E77FF;
@@ -122,8 +128,12 @@ table {
   font-weight: lighter;
   font-size: 12px;
 }
+/* line 64, ../sass/_connect.scss */
+.input-css-text-link:hover {
+  color: #7590ff;
+}
 
-/* line 61, ../sass/_connect.scss */
+/* line 69, ../sass/_connect.scss */
 .btn-css-input {
   width: 130px;
   height: 48px;
@@ -133,4 +143,24 @@ table {
   cursor: pointer;
   margin-left: 75px;
   margin-top: 30px;
+}
+/* line 78, ../sass/_connect.scss */
+.btn-css-input:hover {
+  background-color: #7a8df5;
+}
+
+/* line 83, ../sass/_connect.scss */
+.bottom-form {
+  justify-content: center;
+  display: flex;
+}
+/* line 86, ../sass/_connect.scss */
+.bottom-form a {
+  text-decoration: none;
+  margin-top: 30px;
+  color: #5E77FF;
+}
+/* line 90, ../sass/_connect.scss */
+.bottom-form a:hover {
+  color: #7590ff;
 }
