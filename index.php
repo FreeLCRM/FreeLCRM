@@ -13,6 +13,7 @@ if(!isset($_SESSION["pseudo"])) {
     die();
 }
 
+echo '<a href="deconnexion.php">deco</a>';
 
 
 
