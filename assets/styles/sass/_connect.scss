@@ -92,3 +92,16 @@
     }
   }
 }
+
+.btn-css-input-signup{
+  width: 325;
+  height: 48px;
+  background-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  &:hover{
+    background-color: #7a8df5;
+  }
+}

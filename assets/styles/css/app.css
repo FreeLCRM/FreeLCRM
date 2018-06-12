@@ -164,3 +164,18 @@ table {
 .bottom-form a:hover {
   color: #7590ff;
 }
+
+/* line 96, ../sass/_connect.scss */
+.btn-css-input-signup {
+  width: 325;
+  height: 48px;
+  background-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+/* line 104, ../sass/_connect.scss */
+.btn-css-input-signup:hover {
+  background-color: #7a8df5;
+}
