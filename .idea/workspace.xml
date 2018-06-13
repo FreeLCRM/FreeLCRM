@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac5b40cc-7607-41b1-8d31-f21d55e81dca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/styles/sass/_accueil.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/app.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/_accueil.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/_accueil.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/sass/_accueil.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/sass/_accueil.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/accueil_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/accueil_view.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,18 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accueil_view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="accueil_view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/accueil_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_accueil.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/styles/sass/_accueil.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration_view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/configuration_view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
               <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_accueil.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/styles/sass/_accueil.scss">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="_connect.scss" pinned="false" current-in-tab="false">
@@ -101,6 +115,8 @@
         <option value="$PROJECT_DIR$/assets/styles/sass/_configuration.scss" />
         <option value="$PROJECT_DIR$/assets/styles/sass/app.scss" />
         <option value="$PROJECT_DIR$/views/_accueil_view.html" />
+        <option value="$PROJECT_DIR$/views/accueil_view.html" />
+        <option value="$PROJECT_DIR$/assets/styles/sass/_accueil.scss" />
       </list>
     </option>
   </component>
@@ -208,12 +224,12 @@
       <workItem from="1528792455646" duration="288000" />
       <workItem from="1528794678618" duration="9702000" />
       <workItem from="1528823457000" duration="4345000" />
-      <workItem from="1528877057541" duration="3416000" />
+      <workItem from="1528877057541" duration="4299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17751000" />
+    <option name="totallyTimeSpent" value="18634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="977" extended-state="6" />
@@ -413,36 +429,12 @@
     <entry file="file://$PROJECT_DIR$/assets/styles/sass/_configuration.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/sass/_connect.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/configuration_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/sass/_accueil.scss">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_accueil_view.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -458,10 +450,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/accueil_view.html">
+    <entry file="file://$PROJECT_DIR$/assets/styles/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/sass/_connect.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/configuration_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/accueil_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/sass/_accueil.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>

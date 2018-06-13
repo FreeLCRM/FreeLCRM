@@ -296,3 +296,15 @@ a:hover {
   box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   transform: rotate(45deg);
 }
+
+/* line 1, ../sass/_accueil.scss */
+#home-section {
+  display: flex;
+}
+
+/* line 5, ../sass/_accueil.scss */
+.menu-left {
+  width: 106px;
+  height: 100%;
+  background-color: red;
+}
