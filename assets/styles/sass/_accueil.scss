@@ -14,6 +14,9 @@ body{
 .svg-menu-left{
   margin-top: 80%;
   margin-left: 44px;
+  a:hover{
+    color: #5E77FF;
+  }
 }
 
 .menu-left{
@@ -46,4 +49,47 @@ body{
   border-style: solid;
   border-width: 1px;
   border-color: #fbfbfb;
+}
+
+#utilisateur-section{
+  display: flex;
+}
+
+.title-home{
+  h1{
+    font-size: 38px;
+    color: #233539;
+    margin-left: 284px;
+    margin-top: 30px;
+    font-family: roboto, sans-serif;
+  }
+}
+
+.container-home{
+  width: 70%;
+  height: 260px;
+  background-color: white;
+  display: flex;
+  margin-top: 122px;
+  margin-left: -14%;
+  border-style: dotted;
+  border-color: #5E77FF;
+  border-width: 3px;
+
+  p{
+    font-size: 13px;
+    color: #5E77FF;
+    margin: auto;
+    font-family: roboto, sans-serif;
+  }
+}
+
+.btn-ajouter{
+  width: 243px;
+  height: 45px;
+  right: 240px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #5E77FF;
+  color: white;
 }
