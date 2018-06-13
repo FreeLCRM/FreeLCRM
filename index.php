@@ -29,8 +29,8 @@ include_once '_classes/Client.php';
 include_once '_classes/Projet.php';
 $var = Projet::getAllProjet();
 
-prettyDump($var);
-exit;
+//prettyDump($var);
+//exit;
 
 
 //scandir = scan tt les fichers dans un dossier

@@ -8,16 +8,16 @@
 
 class Projet
 {
-    public $id;
-    public $description;
-    public $deadline;
-    public $price;
-    public $priceHour;
-    public $nbHours;
-    public $dateStart;
-    public $dateEnd;
-    public $state;
-    public $idClient;
+    private $id;
+    private $descriptionProjet;
+    private $deadline;
+    private $price;
+    private $priceHour;
+    private $nbHours;
+    private $dateStart;
+    private $dateEnd;
+    private $state;
+    private $idClient;
 
     private $bdd;
 
@@ -30,7 +30,7 @@ class Projet
         $data = $reqProjet->fetch();
 
         $this->id = $id;
-        $this->description = $data['description'];
+        $this->descriptionProjet = $data['descriptionProjet'];
         $this->deadline = $data['deadline'];
         $this->price = $data['price'];
         $this->priceHour = $data['priceHour'];
@@ -38,7 +38,7 @@ class Projet
         $this->dateStart = $data['dateStart'];
         $this->dateEnd = $data['dateEnd'];
         $this->state = $data['state'];
-        //$this->idClient = $data['idClient'];
+        $this->idClient = $data['idClient'];
     }
 
     /**
