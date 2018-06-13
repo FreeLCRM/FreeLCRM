@@ -3,6 +3,8 @@
 *.php~
 
 .idea/workspace.xml
-
+.iws
+workspace.xml
+tasks.xml
 _config/config.php
 .php_cs*
