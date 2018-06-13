@@ -25,7 +25,7 @@ class Projet
     {
         $this->bdd = Bdd::getPdo();
 
-        $reqProjet = $this->bdd->prepare('SELECT a.*, au.mail, au.firstname FROM projet a INNER  JOIN client au ON au.id = a.client_id WHERE a.id = ?');
+        $reqProjet = $this->bdd->prepare('SELECT * FROM projet JOIN client on client.id = projet.idClient WHERE client.id = ?');
         $reqProjet->execute([$id]);
         $data = $reqProjet->fetch();
 
@@ -45,11 +45,11 @@ class Projet
      * envoie de tt les projets
      * @return array
      */
-    public function getAllProjet(){
-        $this->bdd = Bdd::getPdo();
+    static function getAllProjet(){
+        $stmt = Bdd::getPdo();
 
-        $reqProjet = $this->bdd->prepare('SELECT a.*, au.mail, au.firstname FROM projet a INNER  JOIN client au ON au.id = a.client_id ');
+        $reqProjet = $stmt->prepare('SELECT * FROM projet JOIN client on client.id = projet.idClient');
         $reqProjet->execute([]);
-        $data = $reqProjet->fetchALl();
+        return $reqProjet->fetchALl();
     }
 }

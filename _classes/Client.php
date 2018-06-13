@@ -34,10 +34,10 @@ class Client
      * envoie de tt les clients
      * @return array
      */
-    public function getAllClients(){
-         $this->bdd = Bdd::getPdo();
+    static function getAllClients(){
+        $stmt = Bdd::getPdo();
 
-         $reqClients = $this->bdd->prepare('SELECT * FROM client');
+         $reqClients = $stmt->prepare('SELECT * FROM client');
          $reqClients->execute([]);
         return $reqClients->fetchAll();
     }
