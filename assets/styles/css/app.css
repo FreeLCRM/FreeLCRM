@@ -360,10 +360,10 @@ body {
 /* line 54, ../sass/_accueil.scss */
 #utilisateur-section {
   display: flex;
+  flex-direction: row;
 }
-
-/* line 59, ../sass/_accueil.scss */
-.title-home h1 {
+/* line 57, ../sass/_accueil.scss */
+#utilisateur-section h1 {
   font-size: 38px;
   color: #233539;
   margin-left: 284px;
@@ -396,20 +396,32 @@ body {
   width: 243px;
   height: 45px;
   right: 240px;
+  margin-top: 66px;
   border-radius: 3px;
   position: absolute;
   background-color: #5E77FF;
   color: white;
   cursor: pointer;
 }
-/* line 96, ../sass/_accueil.scss */
+/* line 97, ../sass/_accueil.scss */
 .btn-ajouter:hover {
   background-color: #76aaff;
 }
 
-/* line 101, ../sass/_accueil.scss */
+/* line 102, ../sass/_accueil.scss */
 .status-client {
   width: 300px;
   height: 45px;
-  background-color: #cccccc;
+  background-color: white;
+  position: absolute;
+  align-items: center;
+  right: 500px;
+  margin-top: 66px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 4px;
+}
+/* line 113, ../sass/_accueil.scss */
+.status-client li, .status-client a {
+  color: #233539;
 }
