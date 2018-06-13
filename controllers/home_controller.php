@@ -3,5 +3,10 @@
 include_once '_classes/Client.php';
 include_once '_classes/Projet.php';
 
-$allClient =  Client::getAllClients();
-$allProjet =  Projet::getAllProjet();
+
+function home(){
+    var_dump(include 'views/home_view.php');
+    $allClient =  Client::getAllClients();
+    $allProjet =  Projet::getAllProjet();
+    //return include 'views/home_view.php';
+}
