@@ -24,10 +24,10 @@ if (isset($_GET['page']) AND !empty($_GET['page'])){
     $page = 'home';
 }
 
-include_once '_functions/functions.php';
-include_once '_classes/Client.php';
-include_once '_classes/Projet.php';
-$var = Projet::getAllProjet();
+//include_once '_functions/functions.php';
+//include_once '_classes/Client.php';
+//include_once '_classes/Projet.php';
+//$var = Projet::getAllProjet();
 
 //prettyDump($var);
 //exit;

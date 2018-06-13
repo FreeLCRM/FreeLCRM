@@ -11,7 +11,7 @@
     <div>
         <?php
         foreach ($allClient as $index => $client): ?>
-            <a href=<?= "/projet?id=".$client['id'] ?>><?=  $client['firstname'].' '.$client['lastname'] ?></a>
+            <a href=<?= "views/listproject_view.php?id=".$client['id'] ?>><?=  $client['firstname'].' '.$client['lastname'] ?></a>
         <?php endforeach; ?>
     </div><br><br><br><br>
     <div>
