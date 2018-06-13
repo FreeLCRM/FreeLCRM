@@ -377,7 +377,7 @@ body {
   height: 260px;
   background-color: white;
   display: flex;
-  margin-top: 122px;
+  margin-top: 210px;
   margin-left: -14%;
   border-style: dotted;
   border-color: #5E77FF;
@@ -396,7 +396,7 @@ body {
   width: 243px;
   height: 45px;
   right: 240px;
-  margin-top: 66px;
+  margin-top: 40px;
   border-radius: 3px;
   position: absolute;
   background-color: #5E77FF;
@@ -416,7 +416,7 @@ body {
   position: absolute;
   align-items: center;
   right: 500px;
-  margin-top: 66px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
   border-radius: 4px;
@@ -424,4 +424,48 @@ body {
 /* line 113, ../sass/_accueil.scss */
 .status-client li, .status-client a {
   color: #233539;
+}
+
+/* line 118, ../sass/_accueil.scss */
+.status-nom {
+  width: 56%;
+  height: 45px;
+  position: absolute;
+  align-items: center;
+  right: 510px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 129, ../sass/_accueil.scss */
+.pagination {
+  display: flex;
+}
+
+/* line 133, ../sass/_accueil.scss */
+.page {
+  width: 300px;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 657px;
+  bottom: 30px;
+  line-height: 3;
+  border-radius: 4px;
+}
+
+/* line 146, ../sass/_accueil.scss */
+.active {
+  width: 50px;
+  height: 60px;
+  background-color: #5E77FF;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: -7px;
+  line-height: 4;
+  cursor: pointer;
 }
