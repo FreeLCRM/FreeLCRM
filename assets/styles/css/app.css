@@ -377,7 +377,7 @@ body {
   height: 260px;
   background-color: white;
   display: flex;
-  margin-top: 210px;
+  margin-top: 122px;
   margin-left: -14%;
   border-style: dotted;
   border-color: #5E77FF;
@@ -433,7 +433,7 @@ body {
   position: absolute;
   align-items: center;
   right: 510px;
-  margin-top: 150px;
+  margin-top: 81px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -468,4 +468,15 @@ body {
   margin-top: -7px;
   line-height: 4;
   cursor: pointer;
+}
+
+/* line 158, ../sass/_accueil.scss */
+.container-home-client {
+  width: 70%;
+  height: 88px;
+  background-color: white;
+  display: flex;
+  margin-top: 122px;
+  margin-left: -14%;
+  border-radius: 6px;
 }

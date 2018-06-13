@@ -190,19 +190,19 @@
             </svg>
             Ajouter un client
         </button>
-        <ul class="status-client">
+        <ul class="status-client" style="display: none">
             <li><a href="#">Tous</a></li>
             <li><a href="#" style="color:#ccc;">À venir</a></li>
             <li><a href="#"style="color:#ccc;">En cours</a></li>
             <li><a href="#"style="color:#ccc;">Terminé</a></li>
         </ul>
-        <ul class="status-nom">
-            <li>Entreprise</li>
-            <li>Contact</li>
-            <li>Statut</li>
-            <li>Projets</li>
-            <li>Téléphone</li>
-        </ul>
+        <!--<ul class="status-nom">-->
+            <!--<li>Entreprise</li>-->
+            <!--<li>Contact</li>-->
+            <!--<li>Statut</li>-->
+            <!--<li>Projets</li>-->
+            <!--<li>Téléphone</li>-->
+        <!--</ul>-->
 
     <div class="container-home">
         <p>
@@ -225,7 +225,27 @@
          Aucun client existant dans votre liste
         </p>
     </div>
-    <div class="pagination">
+
+    <div class="container-home-client" style="display: none">
+        <table>
+            <tr>
+                <th>Entreprise</th>
+                <th>Contact</th>
+                <th>Status</th>
+                <th>Projets</th>
+                <th>Téléphone</th>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>Samuel Spencer</td>
+                <td>À venir</td>
+                <td>4</td>
+                <td>+ 33 6 44 00 82</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pagination" style="display: none;">
         <ul class="page">
             <li class="active">1</li>
             <li>2</li>
