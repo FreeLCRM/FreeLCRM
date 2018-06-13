@@ -3,12 +3,12 @@ session_start();  //Démarre une nouvelle session ou reprend une session existan
 require_once "_functions/connect.php";
 require_once "_functions/inscription.php";
 
-if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_pass']) && isset($_POST['email'])) {
+if (isset($_POST['pass']) && isset($_POST['confirm_pass']) && isset($_POST['mail'])) {
     //on initialise la class
-    $inscription = new Inscription($_POST['pseudo'], $_POST['pass'], $_POST['confirme_pass'], $_POST['email']);
+    $inscription = new Inscription($_POST['pass'], $_POST['confirm_pass'], $_POST['mail']);
     $verif       = $inscription->verif();
 
-    if($verif == "Votre compte viens d être créé") {
+    if($verif == true) {
         if($inscription->enregistrement()) {
 
             if($inscription->session()) {
@@ -39,8 +39,8 @@ if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_p
     <form action="" method="post">
         <table>
             <tr>
-                <td>Pseudo</td>
-                <td><input type="text" name="pseudo" placeholder="Pseudo" class="input_text" required></td>
+                <td>Mail</td>
+                <td><input type="email" placeholder="E-mail" name="mail" class="input_text" required></td>
             </tr>
             <tr>
                 <td>Mot de passe</td>
@@ -48,13 +48,9 @@ if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_p
             </tr>
             <tr>
                 <td>Confirmation du mot de passe</td>
-                <td><input type="password" placeholder="Confirmation du mot de passe" name="confirme_pass" class="input_text" required></td>
+                <td><input type="password" placeholder="Confirmation du mot de passe" name="confirm_pass" class="input_text" required></td>
             </tr>
-            <tr>
-                <td>Mail</td>
-                <td><input type="email" placeholder="E-mail" name="email" class="input_text" required></td>
 
-            </tr>
             <tr>
                 <td></td>
                 <td><input type="submit"  name="inscription_bouton" class="input_text submit" value="Inscription"></td>

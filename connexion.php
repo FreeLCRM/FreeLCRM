@@ -7,13 +7,13 @@ require_once "_functions/connexion.php";
 if(isset($_POST) && count($_POST) > 0)
 {
 
-    if (isset($_POST['connexion_bouton']) && isset($_POST['pseudo']) && isset($_POST['pass']))
+    if (isset($_POST['connexion_bouton']) && isset($_POST['mail']) && isset($_POST['pass']))
     {
 
-        $connexion = new Connexion($_POST['pseudo'], $_POST['pass']);
+        $connexion = new Connexion($_POST['mail'], $_POST['pass']);
         $verif = $connexion->verif();
 
-        if ($verif == "ok")
+        if ($verif == true)
         {
             if($connexion->session())
             {
@@ -48,8 +48,8 @@ if(isset($_POST) && count($_POST) > 0)
     <form action="" method="post">
         <table>
             <tr>
-                <td>Pseudo</td>
-                <td><input type="text" name="pseudo" placeholder="Pseudo" class="input_text" required></td>
+                <td>Adresse Mail</td>
+                <td><input type="text"  placeholder="Adresse Mail" name="mail" class="input_text" required></td>
 
             </tr>
             <tr>
@@ -58,7 +58,7 @@ if(isset($_POST) && count($_POST) > 0)
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit"  name="connexion_bouton" class="input_text submit" value="Se Connecter" ></td>
+                <td><input type="submit" class="input_text submit" name="connexion_bouton" value="Se Connecter" ></td>
             </tr>
         </table>
         <span><a href="inscription.php">M'inscrire</a></span>

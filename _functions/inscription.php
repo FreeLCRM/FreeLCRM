@@ -5,25 +5,22 @@ require_once "connect.php";
 class Inscription
 {
 
-    private $pseudo;
     private $pass;
-    private $confirme_pass;
-    private $email;
+    private $confirm_pass;
+    private $mail;
     private $bdd;
 
     //On initialise le construct
-    public function __construct($pseudo, $pass, $confirme_pass, $email)
+    public function __construct($pass, $confirm_pass, $mail, $bdd=0)
     {
 
         // htmlentities convertit les caractères spéciaux en entités HTML pour la sécurité
-        $pseudo = htmlentities($pseudo);
-        $email  = htmlentities($email);
+        $mail  = htmlentities($mail);
 
         // le this est un pointeur
-        $this->setPseudo($pseudo);
         $this->setPass($pass);
-        $this->setConfirmePass($confirme_pass);
-        $this->setEmail($email);
+        $this->setConfirmPass($confirm_pass);
+        $this->setMail($mail);
         $this->bdd = Bdd::getPdo();
     }
 
@@ -32,15 +29,15 @@ class Inscription
     public function verif()
     {
         $sql = "SELECT
-                  email
+                  mail
                 FROM
-                  panel
+                  user
                 WHERE
-                  email = :email";
+                  mail = :mail";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute([
-            'email' => $this->email
+            'mail' => $this->mail
         ]);
 
         $reponse = $requete->fetch();
@@ -51,54 +48,59 @@ class Inscription
         }
 
         //avec strlen on calcul la taille de la string et avec la condition on lui demande que le pseudo soit entre 5 et 20 caractère
-        if(strlen($this->pseudo) >= 5 && strlen($this->pseudo) <= 20)
-        {
+
             $syntaxe = "#^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$#";
 
             //le preg_match effectue une recherche de correspondance
-            if(preg_match($syntaxe,$this->email))
+            if(preg_match($syntaxe,$this->mail))
             {
 
-                if($this->pass == $this->confirme_pass)
+                if($this->pass == $this->confirm_pass)
                 {
-                    return 'Votre compte viens d être créé';
+                    echo("Votre compte viens d'être créé");
+                    return true;
                 }
                 else
                 {
                     return "Le mot de passe doit être identique à la confirmation";
                 }
             }
-        }
-        else
-        {
-            return "Le pseudo n'est pas conforme il doit contenir au moins 5 caractère";
-        }
-
+            else
+            {
+                return "L'adresse mail n'est pas conforme";
+            }
     }
+
+
 
 
     public function enregistrement()
     {
 
         $sql =  "INSERT INTO 
-                            panel
+                            user
                             (
-                            pseudo,
                             pass,
-                            email
+                            mail,
+                            firstname,
+                            lastname,
+                            img,
+                            lang
                             ) 
                      VALUES
                            (
-                            :pseudo,
                             :pass,
-                            :email
+                            :mail,
+                            'CHANGE_ME',
+                            'CHANGE_ME',
+                            'CHANGE_ME',
+                            'CHANGE_ME'
                             )";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute([
-            'pseudo'        => $this->pseudo,
             'pass'          => $this->pass,
-            'email'         => $this->email
+            'mail'         => $this->mail
         ]);
 
         return 1;
@@ -109,32 +111,22 @@ class Inscription
         $sql = "SELECT
                     id 
                 FROM 
-                    panel 
+                    user 
                 WHERE
-                pseudo = :pseudo ";
+                mail = :mail ";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute([
-            'pseudo'=> $this->pseudo
+            'mail'=> $this->mail
         ]);
         $requete = $requete->fetch();
         $_SESSION['id'] = $requete['id'];
-        $_SESSION['pseudo'] = $this->pseudo;
+        $_SESSION['mail'] = $this->mail;
 
         return 1;
     }
 
 //===========================getter et setter===================================
-
-    public function getPseudo()
-    {
-        return $this->pseudo;
-    }
-    public function setPseudo($pseudo)
-    {
-        $this->pseudo = $pseudo;
-    }
-
     // le getter sert à retourné une valeur
     public function getPass()
     {
@@ -146,23 +138,23 @@ class Inscription
         $this->pass = $pass;
     }
 
-    public function getConfirmePass()
+    public function getConfirmPass()
     {
-        return $this->confirme_pass;
+        return $this->confirm_pass;
     }
 
-    public function setConfirmePass($confirme_pass)
+    public function setConfirmPass($confirm_pass)
     {
-        $this->confirme_pass = $confirme_pass;
+        $this->confirm_pass = $confirm_pass;
     }
 
-    public function getEmail()
+    public function getMail()
     {
-        return $this->email;
+        return $this->mail;
     }
 
-    public function setEmail($email)
+    public function setMail($mail)
     {
-        $this->email = $email;
+        $this->mail = $mail;
     }
 }
