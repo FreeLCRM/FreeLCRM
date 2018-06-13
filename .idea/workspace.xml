@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac5b40cc-7607-41b1-8d31-f21d55e81dca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/_accueil.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/_accueil.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/sass/_accueil.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/sass/_accueil.scss" afterDir="false" />
@@ -54,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/views/accueil_view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -62,8 +61,8 @@
       <file leaf-file-name="_accueil.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/sass/_accueil.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="391">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -187,6 +186,10 @@
               <item name="FreeLCRM" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FreeLCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,12 +227,12 @@
       <workItem from="1528792455646" duration="288000" />
       <workItem from="1528794678618" duration="9702000" />
       <workItem from="1528823457000" duration="4345000" />
-      <workItem from="1528877057541" duration="4299000" />
+      <workItem from="1528877057541" duration="5319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18634000" />
+    <option name="totallyTimeSpent" value="19654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="977" extended-state="6" />
@@ -474,14 +477,14 @@
     <entry file="file://$PROJECT_DIR$/views/accueil_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/sass/_accueil.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
