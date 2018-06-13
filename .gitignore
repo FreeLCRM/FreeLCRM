@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+*.php~
+
+.idea/workspace.xml
+
+_config/config.php
+.php_cs*
