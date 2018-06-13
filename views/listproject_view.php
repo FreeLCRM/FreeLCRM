@@ -34,13 +34,14 @@ $tests = $stmt->fetchAll();
     <?php }else{
         foreach ($allProjet as $projet): ?>
             <div>
-                <p><?= $projet['descriptionProjet'] ?></p>  
+                <p><?= $projet['descriptionProjet'] ?></p>
                 <p><?=  $projet['price'] ?></p>
                 <p><?=  $projet['state'] ?></p>
             </div><br>
         <?php endforeach;
      } ?>
 
+<?php include_once 'views/includes/addformProjet.php' ?>
 <?php include_once 'views/includes/footer.php' ?>
 </body>
 </html>

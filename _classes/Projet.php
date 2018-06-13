@@ -51,4 +51,12 @@ class Projet
         $reqProjet->execute([intval ($_GET['id'])]);
         return $reqProjet->fetchALl();
     }
+
+    /**
+     * @return Bdd|null|PDO
+     */
+    public function getBdd()
+    {
+        return $this->bdd;
+    }
 }
