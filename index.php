@@ -4,6 +4,10 @@ session_start();
 
 require_once "_functions/connect.php";
 
+spl_autoload_register(function ($class){
+    include_once '_classes/'.$class.'.php';
+});
+
 //var_dump ($db);
 
 //definition of the current page
