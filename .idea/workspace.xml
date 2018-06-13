@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac5b40cc-7607-41b1-8d31-f21d55e81dca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/styles/sass/_configuration.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/configuration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/configuration_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/app.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/_configuration.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/.sass-cache/19a02401b65daddcd82e116e947e468d11f6f951/_configuration.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/sass/_configuration.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/sass/_configuration.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/configuration.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/includes/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state>
+              <caret selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -42,38 +42,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/home_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="1311">
+              <caret line="57" selection-start-line="57" selection-end-line="58" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configuration.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/configuration.php">
+      <file leaf-file-name="configuration_view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/configuration_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_configuration.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_configuration.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/sass/_configuration.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="460">
+              <caret line="20" selection-start-line="20" selection-end-line="23" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -81,8 +77,17 @@
       <file leaf-file-name="_connect.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/sass/_connect.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="207">
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/includes/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -107,13 +112,14 @@
         <option value="$PROJECT_DIR$/_config/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/views/includes/header.php" />
-        <option value="$PROJECT_DIR$/views/includes/head.php" />
         <option value="$PROJECT_DIR$/views/includes/footer.php" />
         <option value="$PROJECT_DIR$/assets/styles/sass/_connect.scss" />
-        <option value="$PROJECT_DIR$/views/home_view.php" />
-        <option value="$PROJECT_DIR$/views/configuration.php" />
-        <option value="$PROJECT_DIR$/assets/styles/sass/_configuration.scss" />
         <option value="$PROJECT_DIR$/assets/styles/sass/app.scss" />
+        <option value="$PROJECT_DIR$/views/home_view.php" />
+        <option value="$PROJECT_DIR$/views/includes/head.php" />
+        <option value="$PROJECT_DIR$/views/configuration.php" />
+        <option value="$PROJECT_DIR$/views/configuration_view.html" />
+        <option value="$PROJECT_DIR$/assets/styles/sass/_configuration.scss" />
       </list>
     </option>
   </component>
@@ -126,7 +132,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="13" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="977" />
@@ -174,23 +181,6 @@
             <path>
               <item name="FreeLCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="FreeLCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FreeLCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FreeLCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FreeLCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FreeLCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FreeLCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FreeLCRM" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -230,15 +220,15 @@
       <workItem from="1528792455646" duration="288000" />
       <workItem from="1528794678618" duration="9702000" />
       <workItem from="1528823457000" duration="4345000" />
-      <workItem from="1528877057541" duration="578000" />
+      <workItem from="1528877057541" duration="2650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14913000" />
+    <option name="totallyTimeSpent" value="16985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="977" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
@@ -388,37 +378,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/bg.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/contact_view.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/home_view.php">
+    <entry file="file://$PROJECT_DIR$/assets/styles/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="46">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/configuration_view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="598">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/includes/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -429,40 +422,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/includes/head.php">
+    <entry file="file://$PROJECT_DIR$/views/home_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="1311">
+          <caret line="57" selection-start-line="57" selection-end-line="58" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/views/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="115">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/sass/_connect.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="207">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" selection-start-line="20" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/configuration_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/sass/_configuration.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

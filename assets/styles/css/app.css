@@ -296,16 +296,3 @@ a:hover {
   box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   transform: rotate(45deg);
 }
-
-/* line 1, ../sass/_configuration.scss */
-#configuration-section {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 7, ../sass/_configuration.scss */
-.container h1 {
-  font-size: 44px;
-  font-weight: bold;
-  color: #5E77FF;
-}
