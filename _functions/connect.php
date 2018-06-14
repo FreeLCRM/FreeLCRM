@@ -17,7 +17,7 @@ class Bdd
     public static function getPdo()
     {
         if (is_null(self::$pdoconnect))
-        {
+        {//todo ajouter projetId
             try
             {
                 $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION; // ATTR_ERRMODE = rapport d'erreur
