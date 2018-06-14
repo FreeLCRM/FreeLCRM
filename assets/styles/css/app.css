@@ -54,3 +54,431 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 1, ../sass/_connect.scss */
+#connexion-section {
+  background-image: url("../../images/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 32px);
+}
+
+/* line 8, ../sass/_connect.scss */
+.title {
+  display: flex;
+  justify-content: center;
+}
+/* line 11, ../sass/_connect.scss */
+.title h1 {
+  color: white;
+  font-size: 46px;
+  font-weight: bold;
+  padding-top: 7%;
+  font-family: roboto, sans-serif;
+}
+
+/* line 20, ../sass/_connect.scss */
+.connexion-block {
+  width: 385px;
+  height: 409px;
+  background-color: white;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 8px;
+  display: flex;
+}
+
+/* line 30, ../sass/_connect.scss */
+.input-connexion {
+  margin: auto;
+}
+/* line 32, ../sass/_connect.scss */
+.input-connexion h1 {
+  text-align: center;
+  font-family: roboto, sans-serif;
+  font-size: 28px;
+}
+
+/* line 39, ../sass/_connect.scss */
+.input-css-text {
+  width: 325px;
+  height: 40px;
+  border: 1px solid #EFEEF8 !important;
+  border-radius: 4px;
+  background-color: #EFEEF8;
+  padding-left: 10px;
+  font-family: roboto, sans-serif;
+}
+
+/* line 49, ../sass/_connect.scss */
+.label-css-input {
+  font-size: 14px;
+  font-family: roboto, sans-serif;
+  font-weight: lighter;
+  display: block;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+/* line 58, ../sass/_connect.scss */
+.input-css-text-link {
+  text-decoration: none;
+  color: #5E77FF;
+  font-family: roboto, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+/* line 64, ../sass/_connect.scss */
+.input-css-text-link:hover {
+  color: #7590ff;
+}
+
+/* line 69, ../sass/_connect.scss */
+.btn-css-input {
+  width: 130px;
+  height: 48px;
+  background-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  border: none;
+  margin: 30px auto 0 auto;
+  font-size: 14px;
+}
+/* line 82, ../sass/_connect.scss */
+.btn-css-input:hover {
+  background-color: #7a8df5;
+}
+
+/* line 87, ../sass/_connect.scss */
+.bottom-form {
+  display: flex;
+  position: absolute;
+  width: 385px;
+  height: 45px;
+  margin-top: 29px;
+  margin-left: -24px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #EFEEF8;
+  justify-content: center;
+}
+
+/* line 99, ../sass/_connect.scss */
+a {
+  text-decoration: none;
+  margin-top: 15px;
+  color: #5E77FF;
+  font-family: roboto, sans-serif;
+}
+/* line 104, ../sass/_connect.scss */
+a:hover {
+  color: #7590ff;
+}
+
+/* line 110, ../sass/_connect.scss */
+.btn-css-input-signup {
+  width: 325px;
+  height: 48px;
+  background-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 14px;
+}
+/* line 119, ../sass/_connect.scss */
+.btn-css-input-signup:hover {
+  background-color: #7a8df5;
+}
+
+/* line 124, ../sass/_connect.scss */
+.checkbox-input {
+  text-align: center;
+}
+
+/* line 129, ../sass/_connect.scss */
+.input-inscription {
+  width: 385px;
+  height: 543px;
+  background-color: white;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 8px;
+  display: flex;
+}
+/* line 137, ../sass/_connect.scss */
+.input-inscription h1 {
+  text-align: center;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+/* line 145, ../sass/_connect.scss */
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+}
+
+/* line 151, ../sass/_connect.scss */
+.bottom-form-inscription {
+  display: flex;
+  position: absolute;
+  width: 385px;
+  height: 45px;
+  margin-top: 75px;
+  margin-left: 0px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #EFEEF8;
+  justify-content: center;
+}
+
+/* line 164, ../sass/_connect.scss */
+.checkbox-custom {
+  position: absolute;
+  opacity: 0;
+}
+/* line 167, ../sass/_connect.scss */
+.checkbox-custom + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+/* line 175, ../sass/_connect.scss */
+.checkbox-custom + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9B9B9B;
+  margin-top: -2px;
+}
+/* line 190, ../sass/_connect.scss */
+.checkbox-custom:hover + label:before {
+  background: #5E77FF;
+}
+/* line 195, ../sass/_connect.scss */
+.checkbox-custom:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+/* line 200, ../sass/_connect.scss */
+.checkbox-custom:checked + label:before {
+  background: #5E77FF;
+}
+/* line 205, ../sass/_connect.scss */
+.checkbox-custom:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+/* line 211, ../sass/_connect.scss */
+.checkbox-custom:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+/* line 217, ../sass/_connect.scss */
+.checkbox-custom:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+
+/* line 1, ../sass/_accueil.scss */
+body {
+  background-color: #EFEEF8;
+}
+
+/* line 5, ../sass/_accueil.scss */
+#home-section {
+  display: flex;
+}
+
+/* line 9, ../sass/_accueil.scss */
+.svg-logo {
+  margin-top: 30px;
+  margin-left: 31px;
+}
+
+/* line 14, ../sass/_accueil.scss */
+.svg-menu-left {
+  margin-top: 80%;
+  margin-left: 44px;
+}
+/* line 17, ../sass/_accueil.scss */
+.svg-menu-left a:hover {
+  color: #5E77FF;
+}
+
+/* line 22, ../sass/_accueil.scss */
+.menu-left {
+  width: 106px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #98989852;
+}
+
+/* line 33, ../sass/_accueil.scss */
+.menu-top {
+  width: 100%;
+  height: 106px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 41, ../sass/_accueil.scss */
+.input-css-search {
+  width: 179px;
+  height: 40px;
+  margin-left: 20%;
+  margin-top: 42px;
+  padding-left: 9px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fbfbfb;
+}
+
+/* line 54, ../sass/_accueil.scss */
+#utilisateur-section {
+  display: flex;
+  flex-direction: row;
+}
+/* line 57, ../sass/_accueil.scss */
+#utilisateur-section h1 {
+  font-size: 38px;
+  color: #233539;
+  margin-left: 284px;
+  margin-top: 30px;
+  font-family: roboto, sans-serif;
+}
+
+/* line 68, ../sass/_accueil.scss */
+.container-home {
+  width: 70%;
+  height: 260px;
+  background-color: white;
+  display: flex;
+  margin-top: 122px;
+  margin-left: -14%;
+  border-style: dotted;
+  border-color: #5E77FF;
+  border-width: 3px;
+}
+/* line 79, ../sass/_accueil.scss */
+.container-home p {
+  font-size: 13px;
+  color: #5E77FF;
+  margin: auto;
+  font-family: roboto, sans-serif;
+}
+
+/* line 87, ../sass/_accueil.scss */
+.btn-ajouter {
+  width: 243px;
+  height: 45px;
+  right: 240px;
+  margin-top: 40px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #5E77FF;
+  color: white;
+  cursor: pointer;
+}
+/* line 97, ../sass/_accueil.scss */
+.btn-ajouter:hover {
+  background-color: #76aaff;
+}
+
+/* line 102, ../sass/_accueil.scss */
+.status-client {
+  width: 300px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  align-items: center;
+  right: 500px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 4px;
+}
+/* line 113, ../sass/_accueil.scss */
+.status-client li, .status-client a {
+  color: #233539;
+}
+
+/* line 118, ../sass/_accueil.scss */
+.status-nom {
+  width: 56%;
+  height: 45px;
+  position: absolute;
+  align-items: center;
+  right: 510px;
+  margin-top: 81px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 129, ../sass/_accueil.scss */
+.pagination {
+  display: flex;
+}
+
+/* line 133, ../sass/_accueil.scss */
+.page {
+  width: 300px;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 657px;
+  bottom: 30px;
+  line-height: 3;
+  border-radius: 4px;
+}
+
+/* line 146, ../sass/_accueil.scss */
+.active {
+  width: 50px;
+  height: 60px;
+  background-color: #5E77FF;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: -7px;
+  line-height: 4;
+  cursor: pointer;
+}
+
+/* line 158, ../sass/_accueil.scss */
+.container-home-client {
+  width: 70%;
+  height: 88px;
+  background-color: white;
+  display: flex;
+  margin-top: 122px;
+  margin-left: -14%;
+  border-radius: 6px;
+}
