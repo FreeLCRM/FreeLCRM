@@ -135,7 +135,7 @@ class Inscription
         $this->pseudo = $pseudo;
     }
 
-    // le getter sert à retourné une valeur
+    // le getter sert à retourner une valeur
     public function getPass()
     {
         return $this->pass;

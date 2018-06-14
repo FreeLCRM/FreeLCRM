@@ -8,12 +8,15 @@
 
 class Client
 {
-    public $id;
-    public $mail;
-    public $firstname;
-    public $lastname;
-    public $company;
-    public $img;
+    private $id;
+    private $mail;
+    private $firstname;
+    private $lastname;
+    private $img;
+    private $mobile;
+    private $company;
+    private $descriptionClient;
+    private $note;
 
     private $bdd;
 
@@ -21,13 +24,19 @@ class Client
     {
         $this->bdd = Bdd::getPdo();
 
-        $reqClients = $this->bdd->prepare('SELECT * FROM client WHERE id = ?');
+        $reqClients = $this->bdd->prepare('SELECT id, idUser, mail, firstname, lastname, img, mobile, company, descriptionClient, note FROM client WHERE id = ?');
         $reqClients->execute([$id]);
         $data = $reqClients->fetch();
 
         $this->id = $id;
         $this->mail = $data['mail'];
         $this->firstname = $data['firstname'];
+        $this->lastname = $data['lastname'];
+        $this->img = $data['img'];
+        $this->mobile = $data['mobile'];
+        $this->company = $data['company'];
+        $this->descriptionClient = $data['descriptionClient'];
+        $this->note = $data['note'];
     }
 
     /**
@@ -37,7 +46,7 @@ class Client
     static function getAllClients(){
         $stmt = Bdd::getPdo();
 
-         $reqClients = $stmt->prepare('SELECT * FROM client');
+         $reqClients = $stmt->prepare('SELECT id, idUser, mail, firstname, lastname, img, mobile, company, descriptionClient, note FROM client');
          $reqClients->execute([]);
         return $reqClients->fetchAll();
     }
