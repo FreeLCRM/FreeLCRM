@@ -6,10 +6,10 @@
  * Time: 03:02
  */
 //todo changer tous les nom de la base de donnée et voir si on peut pas faire qu'un seul appel
-$host = 'localhost:33';
+$host = 'localhost:3306';
 $user = 'root';
 $password = 'root';
-$dbname = 'teletubbies';
+$dbname = 'phperlimpinpin';
 
 $dsn = 'mysql:host='. $host .';dbname='. $dbname .';charset=utf8';
 

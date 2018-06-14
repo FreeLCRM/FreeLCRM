@@ -6,10 +6,10 @@
  * Time: 01:37
  */
 
-$host = 'localhost:33';
+$host = 'localhost:3306';
 $user = 'root';
 $password = 'root';
-$dbname = 'teletubbies';
+$dbname = 'phperlimpinpin';
 
 $dsn = 'mysql:host='. $host .';dbname='. $dbname .';charset=utf8';
 
@@ -42,7 +42,7 @@ $stmt = $pdo->prepare('INSERT INTO client(	mail,
                                                         :descriptionClient,
                                                         :note)');
 
-var_dump($stmt);
+//var_dump($stmt);
 
 $stmt->execute(['mail' => $mail,
     'firstname' => $firstname,

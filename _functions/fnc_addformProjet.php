@@ -6,10 +6,10 @@
  * Time: 01:11
  */
 
-$host = 'localhost:33';
+$host = 'localhost:3306';
 $user = 'root';
 $password = 'root';
-$dbname = 'teletubbies';
+$dbname = 'phperlimpinpin';
 
 $dsn = 'mysql:host='. $host .';dbname='. $dbname .';charset=utf8';
 
