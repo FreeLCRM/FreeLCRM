@@ -1,4 +1,10 @@
 /* line 1, ../sass/global.scss */
 body {
   font-family: 'Roboto', Arial, sans-serif;
+  color: #233539;
+}
+
+/* line 6, ../sass/global.scss */
+* {
+  box-sizing: border-box;
 }
