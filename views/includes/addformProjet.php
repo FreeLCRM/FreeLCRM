@@ -1,5 +1,6 @@
 <?php
     $currentid = intval ($_GET['id']);
+    echo $currentid;
 ?>
 <div>
     <form method="post" action=<?= "_functions/fnc_addformProjet.php?id=".$currentid?>>
