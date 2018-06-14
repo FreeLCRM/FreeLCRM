@@ -22,6 +22,8 @@
                 <p><?=  date_format(date_create($projet['dateStart']),"d/m/Y") ?></p>
                 <p><?=  date_format(date_create($projet['dateEnd']),"d/m/Y") ?></p>
                 <p><?=  $projet['state'] ?></p>
+
+                <a href=<?= "_functions/fnc_deleteProjet.php?id=".$projet['idP'] ?>>delete</a>
             </div><br>
         <?php endforeach;
      } ?>

@@ -8,7 +8,7 @@
 
 class Projet
 {
-    private $id;
+    private $idP;
     private $descriptionProjet;
     private $deadline;
     private $price;
@@ -21,14 +21,14 @@ class Projet
 
     private $bdd;
 
-    function __construct($id)
+    function __construct($idP)
     {
         $this->bdd = Bdd::getPdo();
-        $reqProjet = $this->bdd->prepare('SELECT  idClient, descriptionProjet, deadline, price, priceHour, nbHours, dateStart, dateEnd, state FROM projet JOIN client on client.id = projet.idClient WHERE client.id = ?');
-        $reqProjet->execute([$id]);
+        $reqProjet = $this->bdd->prepare('SELECT  idP, idClient, descriptionProjet, deadline, price, priceHour, nbHours, dateStart, dateEnd, state FROM projet JOIN client on client.id = projet.idClient WHERE client.id = ?');
+        $reqProjet->execute([$idP]);
         $data = $reqProjet->fetch();
 
-        $this->id = $id;
+        $this->idP = $idP;
         $this->descriptionProjet = $data['descriptionProjet'];
         $this->deadline = $data['deadline'];
         $this->price = $data['price'];
@@ -46,7 +46,7 @@ class Projet
      */
     static function getAllProjet(){
         $stmt = Bdd::getPdo();
-        $reqProjet = $stmt->prepare('SELECT idClient, descriptionProjet, deadline, price, priceHour, nbHours, dateStart, dateEnd, state FROM projet JOIN client on client.id = projet.idClient WHERE client.id = ?');
+        $reqProjet = $stmt->prepare('SELECT idP,  idClient, descriptionProjet, deadline, price, priceHour, nbHours, dateStart, dateEnd, state FROM projet JOIN client on client.id = projet.idClient WHERE client.id = ?');
         $reqProjet->execute([intval ($_GET['id'])]);
         return $reqProjet->fetchALl();
     }

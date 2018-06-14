@@ -18,6 +18,7 @@
             <p><?= $client['company'] ?></p>
             <p><?= $client['descriptionClient'] ?></p>
             <p><?= $client['note'] ?></p>
+            <a href=<?= "_functions/fnc_deleteClient.php?id=".$client['id'] ?>>delete</a>
         </div>
         <?php endforeach; ?>
     </div><br>
