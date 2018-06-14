@@ -161,27 +161,13 @@ display: flex;
   border-radius: 6px;
 }
 
-tbody{
-  display: flex;
-}
-
-
-
-.th-css-disposition{
-  display: flex;
-  width: 835px;
-  justify-content: space-evenly;
-}
-
-
 
 .th-css-disposition-name{
   display: flex;
-  display: flex;
-  width: 803px;
+  width: 811px;
   justify-content: space-evenly;
   margin-top: 30px;
-  margin-left: -796px;
+  margin-left: -818px;
   justify-content: space-evenly;
 }
 
@@ -197,4 +183,34 @@ tbody{
 
 .bg-color{
   background-color: #EFEEF8;
+}
+
+.tr-accueil{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 900px
+}
+
+.tr-accueil-data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 905px;
+}
+
+.td-a-venir{
+  width: 60px;
+  height: 25px;
+  background-color: #FABC06;
+  padding: 2px;
+  line-height: 2;
+  padding-left: 12px;
+  color: white;
+  margin-right: 40px;
+  border-radius: 4px;
 }

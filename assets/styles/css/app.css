@@ -583,11 +583,10 @@ tbody {
 /* line 178, ../sass/_accueil.scss */
 .th-css-disposition-name {
   display: flex;
-  display: flex;
-  width: 803px;
+  width: 811px;
   justify-content: space-evenly;
   margin-top: 30px;
-  margin-left: -796px;
+  margin-left: -818px;
   justify-content: space-evenly;
 }
 
