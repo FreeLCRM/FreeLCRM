@@ -94,8 +94,12 @@ body{
   background-color: #5E77FF;
   color: white;
   cursor: pointer;
+  border: none;
+  text-align: center;
+  line-height: 45px;
   &:hover{
     background-color: #76aaff;
+    color: #fff;
   }
 }
 
@@ -128,6 +132,7 @@ body{
 
 .pagination{
   display: flex;
+  display: none;
 }
 
 .page{
@@ -137,10 +142,16 @@ body{
   display: flex;
   justify-content: space-around;
   position: absolute;
-  right: 657px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 30px;
   line-height: 3;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .active{
@@ -155,12 +166,70 @@ body{
   cursor: pointer;
 }
 
+.listClientContainer{
+  margin-top: 122px;
+}
+
 .container-home-client {
-  width: 70%;
+  width: 100%;
   height: 88px;
   background-color: white;
   display: flex;
-  margin-top: 122px;
+  margin-top: 22px;
   margin-left: -14%;
   border-radius: 6px;
+}
+
+
+.th-css-disposition-name{
+  display: flex;
+  width: 811px;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-left: -818px;
+  justify-content: space-evenly;
+}
+
+.table-home{
+  display: flex;
+  margin-top: 15px;
+  margin-left: -45px;
+}
+
+.table-home-client{
+  margin-top: 25px;
+}
+
+.bg-color{
+  background-color: #EFEEF8;
+}
+
+.tr-accueil{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 900px
+}
+
+.tr-accueil-data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 905px;
+}
+
+.td-a-venir{
+  width: 75px;
+  height: 25px;
+  background-color: #FABC06;
+  padding: 2px;
+  line-height: 2;
+  padding-left: 12px;
+  color: white;
+  margin-right: 40px;
+  border-radius: 4px;
 }

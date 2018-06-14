@@ -404,13 +404,17 @@ body {
   background-color: #5E77FF;
   color: white;
   cursor: pointer;
+  border: none;
+  text-align: center;
+  line-height: 45px;
 }
-/* line 97, ../sass/_accueil.scss */
+/* line 100, ../sass/_accueil.scss */
 .btn-ajouter:hover {
   background-color: #76aaff;
+  color: #fff;
 }
 
-/* line 102, ../sass/_accueil.scss */
+/* line 106, ../sass/_accueil.scss */
 .status-client {
   width: 300px;
   height: 45px;
@@ -423,12 +427,12 @@ body {
   justify-content: space-evenly;
   border-radius: 4px;
 }
-/* line 113, ../sass/_accueil.scss */
+/* line 117, ../sass/_accueil.scss */
 .status-client li, .status-client a {
   color: #233539;
 }
 
-/* line 118, ../sass/_accueil.scss */
+/* line 122, ../sass/_accueil.scss */
 .status-nom {
   width: 56%;
   height: 45px;
@@ -440,12 +444,13 @@ body {
   justify-content: space-evenly;
 }
 
-/* line 129, ../sass/_accueil.scss */
+/* line 133, ../sass/_accueil.scss */
 .pagination {
   display: flex;
+  display: none;
 }
 
-/* line 133, ../sass/_accueil.scss */
+/* line 138, ../sass/_accueil.scss */
 .page {
   width: 300px;
   height: 45px;
@@ -453,13 +458,19 @@ body {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  right: 657px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 30px;
   line-height: 3;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-/* line 146, ../sass/_accueil.scss */
+/* line 157, ../sass/_accueil.scss */
 .active {
   width: 50px;
   height: 60px;
@@ -472,13 +483,291 @@ body {
   cursor: pointer;
 }
 
-/* line 158, ../sass/_accueil.scss */
+/* line 169, ../sass/_accueil.scss */
+.listClientContainer {
+  margin-top: 122px;
+}
+
+/* line 173, ../sass/_accueil.scss */
 .container-home-client {
-  width: 70%;
+  width: 100%;
   height: 88px;
   background-color: white;
   display: flex;
-  margin-top: 122px;
+  margin-top: 22px;
   margin-left: -14%;
   border-radius: 6px;
+}
+
+/* line 184, ../sass/_accueil.scss */
+.th-css-disposition-name {
+  display: flex;
+  width: 811px;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-left: -818px;
+  justify-content: space-evenly;
+}
+
+/* line 193, ../sass/_accueil.scss */
+.table-home {
+  display: flex;
+  margin-top: 15px;
+  margin-left: -45px;
+}
+
+/* line 199, ../sass/_accueil.scss */
+.table-home-client {
+  margin-top: 25px;
+}
+
+/* line 203, ../sass/_accueil.scss */
+.bg-color {
+  background-color: #EFEEF8;
+}
+
+/* line 207, ../sass/_accueil.scss */
+.tr-accueil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 900px;
+}
+
+/* line 216, ../sass/_accueil.scss */
+.tr-accueil-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 905px;
+}
+
+/* line 225, ../sass/_accueil.scss */
+.td-a-venir {
+  width: 75px;
+  height: 25px;
+  background-color: #FABC06;
+  padding: 2px;
+  line-height: 2;
+  padding-left: 12px;
+  color: white;
+  margin-right: 40px;
+  border-radius: 4px;
+}
+
+/* line 1, ../sass/_ajout-client.scss */
+.container-fluid {
+  position: fixed;
+  margin: 24px auto 0 143px;
+}
+/* line 5, ../sass/_ajout-client.scss */
+.container-fluid .back-container {
+  background-color: #FFF;
+  margin-bottom: 0.5rem;
+  padding: 0.9rem;
+}
+/* line 10, ../sass/_ajout-client.scss */
+.container-fluid .back-container__link {
+  color: #7d7575;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+/* line 18, ../sass/_ajout-client.scss */
+.container-fluid .back-container__link span {
+  margin-left: 0.5rem;
+}
+/* line 24, ../sass/_ajout-client.scss */
+.container-fluid .customer-container {
+  background-color: #FFF;
+}
+/* line 28, ../sass/_ajout-client.scss */
+.container-fluid .customer-container-inner {
+  width: 1035px;
+  margin: auto;
+  padding: 2rem 2rem 6rem 2rem;
+}
+/* line 33, ../sass/_ajout-client.scss */
+.container-fluid .customer-container-inner .form-group {
+  width: 50%;
+}
+/* line 38, ../sass/_ajout-client.scss */
+.container-fluid .customer-header {
+  display: inline-block;
+  width: 100%;
+}
+/* line 42, ../sass/_ajout-client.scss */
+.container-fluid .customer-header__title {
+  display: inline-block;
+  font-size: 2rem;
+}
+/* line 47, ../sass/_ajout-client.scss */
+.container-fluid .customer-header__group {
+  float: right;
+  display: inline-block;
+}
+/* line 53, ../sass/_ajout-client.scss */
+.container-fluid .btn-css-input-primary {
+  width: 127px;
+  height: 45px;
+  background-color: #5E77FF;
+  border-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* line 64, ../sass/_ajout-client.scss */
+.container-fluid .btn-css-input-primary:hover {
+  background-color: #475ac3;
+  border-color: #475ac3;
+}
+/* line 70, ../sass/_ajout-client.scss */
+.container-fluid .label-css-input-customer {
+  font-size: 14px;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  display: block;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+/* line 79, ../sass/_ajout-client.scss */
+.container-fluid .btn-css-input-secondary {
+  display: block;
+  line-height: 45px;
+  text-align: center;
+  width: 127px;
+  height: 45px;
+  background-color: #D3D3D3;
+  border-color: #D3D3D3;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* line 94, ../sass/_ajout-client.scss */
+.container-fluid .customer-form-inner {
+  display: flex;
+}
+/* line 97, ../sass/_ajout-client.scss */
+.container-fluid .customer-form-inner .input-css-text-customer {
+  width: 325px;
+  height: 40px;
+  border: 1px solid #EFEEF8 !important;
+  border-radius: 4px;
+  background-color: #EFEEF8;
+  padding-left: 10px;
+}
+/* line 106, ../sass/_ajout-client.scss */
+.container-fluid .customer-form-inner .area-css-text-customer {
+  border: none;
+  border-radius: 4px;
+  background-color: #EFEEF8;
+  height: 19rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.7rem 0 0.7rem 10px;
+}
+
+/* line 1, ../sass/_configuration.scss */
+.config-inner {
+  width: 1100px;
+  margin: auto;
+  margin-top: 5%;
+}
+/* line 6, ../sass/_configuration.scss */
+.config-inner__logo {
+  width: 713px;
+  margin: auto;
+}
+/* line 11, ../sass/_configuration.scss */
+.config-inner__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 713px;
+  margin: auto;
+  margin-top: 5%;
+}
+/* line 19, ../sass/_configuration.scss */
+.config-inner__form .profile-picture {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  border: 6px dashed #ececec;
+  cursor: pointer;
+}
+/* line 29, ../sass/_configuration.scss */
+.config-inner__form .profile-picture__text {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ececec;
+  padding-top: 2rem;
+  font-weight: 500;
+  width: 80%;
+}
+/* line 39, ../sass/_configuration.scss */
+.config-inner__form .form-inputs {
+  width: 55%;
+  height: 20rem;
+}
+/* line 43, ../sass/_configuration.scss */
+.config-inner__form .form-inputs .input-css-text-config {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #EFEEF8 !important;
+  border-radius: 4px;
+  background-color: #EFEEF8;
+  padding-left: 10px;
+  font-family: roboto, sans-serif;
+}
+/* line 53, ../sass/_configuration.scss */
+.config-inner__form .form-inputs .btn-css-input-config {
+  width: 60%;
+  height: 48px;
+  background-color: #5E77FF;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 14px;
+  border-color: #5E77FF;
+}
+/* line 64, ../sass/_configuration.scss */
+.config-inner__form .form-inputs .btn-css-input-config:hover {
+  background-color: #7a8df5;
+  border-color: #7a8df5;
+}
+/* line 70, ../sass/_configuration.scss */
+.config-inner__form .form-inputs .input-color-picker {
+  border: none;
+  width: 15%;
+  height: 2rem;
+}
+
+/* line 1, ../sass/global.scss */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #233539;
+}
+
+/* line 6, ../sass/global.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/global.scss */
+.tesst {
+  color: red;
 }

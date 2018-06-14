@@ -6,7 +6,7 @@
  * Time: 02:51
  */
 
-$host = 'localhost:3306';
+$host = 'localhost:33';
 $user = 'root';
 $password = 'root';
 $dbname = 'phperlimpinpin';

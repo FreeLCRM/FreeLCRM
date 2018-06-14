@@ -6,7 +6,7 @@
  * Time: 01:37
  */
 
-$host = 'localhost:3306';
+$host = 'localhost:33';
 $user = 'root';
 $password = 'root';
 $dbname = 'phperlimpinpin';
@@ -55,4 +55,4 @@ $stmt->execute(['mail' => $mail,
 
 $currentPage =  'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 //var_dump($currentPage);
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ../index.php');
