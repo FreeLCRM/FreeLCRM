@@ -71,7 +71,7 @@ body{
   background-color: white;
   display: flex;
   margin-top: 122px;
-  margin-left: -14%;
+  margin-left: 12%;
   border-style: dotted;
   border-color: #5E77FF;
   border-width: 3px;
@@ -168,6 +168,13 @@ body{
 
 .listClientContainer{
   margin-top: 122px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(calc(-50% + 106px));
+  -moz-transform: translateX(calc(-50% + 106px));
+  -ms-transform: translateX(calc(-50% + 106px));
+  -o-transform: translateX(calc(-50% + 106px));
+  transform: translateX(calc(-50% + 106px));
 }
 
 .container-home-client {
