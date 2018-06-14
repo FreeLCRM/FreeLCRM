@@ -27,43 +27,44 @@ if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_p
 <head>
     <meta charset="UTF-8">
     <title>inscription</title>
-    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-<header>
-    <h1>Inscription</h1>
-</header>
+<?php include_once 'views/includes/head.php' ?>
+<?php include_once 'views/includes/header.php' ?>
 
-<main>
-    <div class="verif"><?php if(isset($verif)){ echo $verif;} ?></div>
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td>Pseudo</td>
-                <td><input type="text" name="pseudo" placeholder="Pseudo" class="input_text" required></td>
-            </tr>
-            <tr>
-                <td>Mot de passe</td>
-                <td><input type="password" placeholder="Mot de passe" name="pass" class="input_text" required></td>
-            </tr>
-            <tr>
-                <td>Confirmation du mot de passe</td>
-                <td><input type="password" placeholder="Confirmation du mot de passe" name="confirme_pass" class="input_text" required></td>
-            </tr>
-            <tr>
-                <td>Mail</td>
-                <td><input type="email" placeholder="E-mail" name="email" class="input_text" required></td>
+<div id="connexion-section">
+    <div class="title">
+        <h1>.freelcrm</h1>
+    </div>
+    <div class="connexion-block">
+        <h1>Inscription</h1>
+        <div class="input-inscription">
+            <div class="verif"><?php if(isset($verif)){ echo $verif;} ?></div>
+            <form action="" method="post" class="form-grid">
+                <label class="label-css-input" for="pseudo">Pseudo</label>
+                <input class="input-css-text" type="text" name="pseudo" placeholder="Pseudo"><br>
 
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit"  name="inscription_bouton" class="input_text submit" value="Inscription"></td>
-            </tr>
-        </table>
-        <span><a href="connexion.php">J'ai déjà un compte</a></span>
+                <label class="label-css-input" for="email">E-Mail*</label>
+                <input class="input-css-text" type="email" name="email" placeholder="exemple@mail.com"><br>
 
-    </form>
+                <label class="label-css-input" for="pass">Mot de passe*</label>
+                <input class="input-css-text" type="password" name="pass"><br>
 
-</main>
+                <label class="label-css-input" for="confirme_pass">Confirmer mot de passe*</label>
+                <input class="input-css-text" type="password" name="confirme_pass"><br>
+
+                <input class="checkbox-custom" id="checkbox-custom" type="checkbox" value="">
+                <label for="checkbox-custom">J’accepte les conditions générales</label>
+
+                <button class="btn-css-input-signup" type="submit">Inscription</button>
+            </form>
+
+            <div class="bottom-form-inscription">
+                <a href="connexion.php">Déjà membre ? Connectez-vous !</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

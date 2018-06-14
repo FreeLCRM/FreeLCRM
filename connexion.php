@@ -36,34 +36,38 @@ if(isset($_POST) && count($_POST) > 0)
 <head>
     <meta charset="UTF-8">
     <title>connexion</title>
-    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-<header>
-    <h1>Connexion</h1>
-</header>
+<?php include_once 'views/includes/head.php' ?>
+<?php include_once 'views/includes/header.php' ?>
 
-<main>
-    <div class="verif"><?php if(isset($verif)){ echo $verif;} ?></div>
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td>Pseudo</td>
-                <td><input type="text" name="pseudo" placeholder="Pseudo" class="input_text" required></td>
+<div id="connexion-section">
+    <div class="title">
+        <h1>.freelcrm</h1>
+    </div>
+    <div class="connexion-block" >
+        <div class="input-connexion">
+            <h1>Connexion</h1>
+            <div class="verif"><?php if(isset($verif)){ echo $verif;} ?></div>
+            <form action="" method="post">
 
-            </tr>
-            <tr>
-                <td>Mot de passe</td>
-                <td><input type="password" placeholder="Mot de passe" name="pass" class="input_text" required></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit"  name="connexion_bouton" class="input_text submit" value="Se Connecter" ></td>
-            </tr>
-        </table>
-        <span><a href="inscription.php">M'inscrire</a></span>
-    </form>
-</main>
+                <label class="label-css-input" for="pseudo">Pseudo</label>
+                <input class="input-css-text" type="text" name="pseudo" placeholder="Pseudo"><br>
+
+                <label class="label-css-input" for="pass">Mot de passe</label>
+                <input class="input-css-text" type="password" name="pass"><br>
+
+                <!-- <a class="input-css-text-link" href="#">Mot de passe oublié ?</a>-->
+                <input type="submit" name="connexion_bouton" class="btn-css-input" value="Se connecter">
+                <!--<button class="btn-css-input" type="submit">Connexion</button>-->
+            </form>
+
+            <div class="bottom-form">
+                <a href="inscription.php">Nouveau ? Inscrivez-vous !</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 
