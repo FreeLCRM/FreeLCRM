@@ -55,6 +55,11 @@ table {
   border-spacing: 0;
 }
 
+/* line 1, ../sass/global.scss */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 /* line 1, ../sass/_connect.scss */
 #connexion-section {
   background-image: url("../../images/bg.jpg");
@@ -455,10 +460,9 @@ body {
   bottom: 30px;
   line-height: 3;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-/* line 147, ../sass/_accueil.scss */
+/* line 146, ../sass/_accueil.scss */
 .active {
   width: 50px;
   height: 60px;
@@ -471,7 +475,7 @@ body {
   cursor: pointer;
 }
 
-/* line 159, ../sass/_accueil.scss */
+/* line 158, ../sass/_accueil.scss */
 .container-home-client {
   width: 70%;
   height: 88px;
@@ -480,39 +484,4 @@ body {
   margin-top: 122px;
   margin-left: -14%;
   border-radius: 6px;
-}
-
-/* line 169, ../sass/_accueil.scss */
-tbody {
-  display: flex;
-}
-
-/* line 175, ../sass/_accueil.scss */
-.th-css-disposition {
-  display: flex;
-  width: 835px;
-  justify-content: space-evenly;
-}
-
-/* line 183, ../sass/_accueil.scss */
-.th-css-disposition-name {
-  display: flex;
-  display: flex;
-  width: 803px;
-  justify-content: space-evenly;
-  margin-top: 30px;
-  margin-left: -796px;
-  justify-content: space-evenly;
-}
-
-/* line 193, ../sass/_accueil.scss */
-.table-home {
-  display: flex;
-  margin-top: 15px;
-  margin-left: -45px;
-}
-
-/* line 199, ../sass/_accueil.scss */
-.table-home-client {
-  margin-top: 25px;
 }

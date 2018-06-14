@@ -112,8 +112,11 @@
   cursor: pointer;
   margin-top: 30px;
   font-size: 14px;
+  border-color: #5E77FF;
+
   &:hover{
     background-color: #7a8df5;
+    border-color: #7a8df5;
   }
 }
 
