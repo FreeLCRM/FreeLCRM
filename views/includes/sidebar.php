@@ -5,11 +5,13 @@
  * Date: 14/06/2018
  * Time: 21:10
  */
+
 ?>
 
 <div id="home-section">
     <div class="menu-top">
-        <input class="input-css-search" type="search" name="search" placeholder="Rechercher un client">
+        <input class="input-css-search" id="search" type="search" name="search" placeholder="Rechercher un client">
+
     </div>
     <div class="menu-left">
         <svg class="svg-logo" width="45px" height="38px" viewBox="0 0 45 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

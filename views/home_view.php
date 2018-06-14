@@ -34,9 +34,10 @@
         <li><a href="#"style="color:#ccc;">Terminé</a></li>
     </ul>
 
-    <div class="listClientContainer">
+    <div class="listClientContainer" id="display">
         <?php
-            if (empty($allClient)){ ?>
+            if (empty($allClient)) {
+                ?>
                 <div class="container-home" style="width: 500px;">
                 <p>
                 <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -57,8 +58,58 @@
                     Aucun client existant dans votre liste
                 </p>
                 </div>
-           <?php }else{
-                 foreach ($allClient as $index => $client): ?>
+           <?php
+            } elseif (isset($_POST['search'])) {
+                //Getting value of "search" variable from "script.js".
+
+                //Including Database configuration file.
+
+                include "./../_functions/connect.php";
+
+                //Search box value assigning to $Name variable.
+
+                $name = $_POST['search'];
+
+                var_dump($name);
+
+                //Search query.
+
+                $query = "SELECT lastname FROM client WHERE lastname LIKE '%$name%'";
+
+                //Query execution
+
+                //Fetching result from database.
+
+                foreach ($pdoconnect->query($query) as $result) {
+                    ?>
+
+              <!-- Calling javascript function named as "fill" found in "script.js" file.
+
+                   By passing fetched result as parameter. -->
+
+           <a href=<?= "/listproject?id=".$result['id'] ?>><div class="container-home$resultclient">
+           <table>
+               <tr class="tr-accueil">
+                   <th>Entreprise</th>
+                   <th>Contact</th>
+                   <!--<th>Projets</th>-->
+                   <th>Téléphone</th>
+                   <th>Supprimer</th>
+               </tr>
+               <tr class="tr-accueil-data">
+                   <td><?= $result['company'] ?></td>
+                   <td><?= $result['mail'] ?></td>
+                   <td><?= $result['mobile'] ?></td>
+                   <td><a href=<?= "_functions/fnc_deleteClient.php?id=".$result['id'] ?>>delete</a></td>
+               </tr>
+           </table>
+       </div></a>
+
+            <?php
+                } ?>
+           <?php
+            } else {
+                foreach ($allClient as $index => $client): ?>
                 <a href=<?= "/listproject?id=".$client['id'] ?>><div class="container-home-client">
                 <table>
                     <tr class="tr-accueil">
@@ -91,8 +142,38 @@
     </div>
 </div>
 
+<script type="text/javascript">
+
+//Getting value from "ajax.php".
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  document.querySelector("#search").addEventListener("keyup", function() {
+    var name = document.querySelector('#search').value;
+    if (name == "") {
+      document.querySelector("#display").innerHTML = "";
+    } else {
+
+      var xhttp;
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.querySelector("#display").innerHTML = this.responseText;
+          document.querySelector("#display").style.display = "block";
+        }
+      };
+      xhttp.open("POST", "views/home_view.php", true);
+      xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhttp.send(encodeURI('search=' + name));
+    }
+  })
+
+});
+
+
+</script>
+
 <?php /*include_once 'views/includes/addformClient.php' */?>
 <?php include_once 'views/includes/footer.php' ?>
 </body>
 </html>
-
