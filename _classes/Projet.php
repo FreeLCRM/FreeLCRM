@@ -24,7 +24,6 @@ class Projet
     function __construct($id)
     {
         $this->bdd = Bdd::getPdo();
-        //TODO changer les select *
         $reqProjet = $this->bdd->prepare('SELECT  idClient, descriptionProjet, deadline, price, priceHour, nbHours, dateStart, dateEnd, state FROM projet JOIN client on client.id = projet.idClient WHERE client.id = ?');
         $reqProjet->execute([$id]);
         $data = $reqProjet->fetch();

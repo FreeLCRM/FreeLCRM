@@ -12,9 +12,11 @@ class Client
     private $mail;
     private $firstname;
     private $lastname;
-    private $company;
     private $img;
+    private $mobile;
+    private $company;
     private $descriptionClient;
+    private $note;
 
     private $bdd;
 
@@ -30,9 +32,11 @@ class Client
         $this->mail = $data['mail'];
         $this->firstname = $data['firstname'];
         $this->lastname = $data['lastname'];
-        $this->company = $data['company'];
         $this->img = $data['img'];
+        $this->mobile = $data['mobile'];
+        $this->company = $data['company'];
         $this->descriptionClient = $data['descriptionClient'];
+        $this->note = $data['note'];
     }
 
     /**

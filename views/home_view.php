@@ -10,10 +10,20 @@
     <div>
         <?php
         foreach ($allClient as $index => $client): ?>
+        <div>
             <a href=<?= "/listproject?id=".$client['id'] ?>><?=  $client['firstname'].' '.$client['lastname'] ?></a>
+            <p><?= $client['mail'] ?></p>
+            <p><?= $client['mobile'] ?></p>
+            <img src="<?= $client['img'] ?>" alt="">
+            <p><?= $client['company'] ?></p>
+            <p><?= $client['descriptionClient'] ?></p>
+            <p><?= $client['note'] ?></p>
+        </div>
         <?php endforeach; ?>
     </div><br>
 
+
+<?php include_once 'views/includes/addformClient.php' ?>
 <?php include_once 'views/includes/footer.php' ?>
 </body>
 </html>

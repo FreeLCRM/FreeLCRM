@@ -2,7 +2,7 @@
     $currentid = intval ($_GET['id']);
 ?>
 <div>
-    <form method="post" action=<?= "_functions/fnc_addformClient.php?id=".$currentid?>>
+    <form method="post" action=<?= "_functions/fnc_addformProjet.php?id=".$currentid?>>
         <p>
             <label for="descriptionProjet">description du projet</label>
             <input type="text" name="descriptionProjet" id="descriptionProjet">
@@ -36,8 +36,8 @@
             <!--<input type="text" name="state" id="state">-->
             <select name="state" id="state">
                 <option>choisir un état d'avencement</option>
-                <option value="in_progress">en cours</option>
-                <option value="done">fini</option>
+                <option value="en cours">en cours</option>
+                <option value="fini">fini</option>
             </select>
         </p>
         <input type="submit" value="Submit">
