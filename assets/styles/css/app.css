@@ -538,7 +538,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 141, ../sass/_accueil.scss */
+/* line 142, ../sass/_accueil.scss */
 .active {
   width: 50px;
   height: 60px;
@@ -551,7 +551,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 153, ../sass/_accueil.scss */
+/* line 154, ../sass/_accueil.scss */
 .container-home-client {
   width: 70%;
   height: 88px;
@@ -563,41 +563,61 @@ a:hover {
 }
 
 /* line 165, ../sass/_accueil.scss */
-tbody {
-  display: flex;
-}
-
-/* line 171, ../sass/_accueil.scss */
-.th-css-disposition {
-  display: flex;
-  width: 835px;
-  justify-content: space-evenly;
-}
-
-/* line 179, ../sass/_accueil.scss */
 .th-css-disposition-name {
   display: flex;
-  display: flex;
-  width: 803px;
+  width: 811px;
   justify-content: space-evenly;
   margin-top: 30px;
-  margin-left: -796px;
+  margin-left: -818px;
   justify-content: space-evenly;
 }
 
-/* line 189, ../sass/_accueil.scss */
+/* line 174, ../sass/_accueil.scss */
 .table-home {
   display: flex;
   margin-top: 15px;
   margin-left: -45px;
 }
 
-/* line 195, ../sass/_accueil.scss */
+/* line 180, ../sass/_accueil.scss */
 .table-home-client {
   margin-top: 25px;
 }
 
-/* line 199, ../sass/_accueil.scss */
+/* line 184, ../sass/_accueil.scss */
 .bg-color {
   background-color: #EFEEF8;
+}
+
+/* line 188, ../sass/_accueil.scss */
+.tr-accueil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 900px;
+}
+
+/* line 197, ../sass/_accueil.scss */
+.tr-accueil-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 905px;
+}
+
+/* line 206, ../sass/_accueil.scss */
+.td-a-venir {
+  width: 60px;
+  height: 25px;
+  background-color: #FABC06;
+  padding: 2px;
+  line-height: 2;
+  padding-left: 12px;
+  color: white;
+  margin-right: 40px;
+  border-radius: 4px;
 }
