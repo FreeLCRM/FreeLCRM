@@ -3,7 +3,7 @@
     echo $currentid;
 ?>
 <div>
-    <form method="post" action=<?= "_functions/fnc_addformProjet.php?id=".$currentid?>>
+    <form method="post" action=<?= "../../_functions/fnc_addformProjet.php?id=".$currentid?>>
         <p>
             <label for="descriptionProjet">description du projet</label>
             <input type="text" name="descriptionProjet" id="descriptionProjet">

@@ -1,5 +1,6 @@
 <?php
-
+    $currentid = intval ($_GET['id']);
+    echo $currentid;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +11,8 @@
 
 <div id="utilisateur-section">
     <!--header-->
-    <h1>Mes clients</h1>
-    <a href="views/includes/addformProjet.php" class="btn-ajouter">
+    <h1>Mes projets</h1>
+    <a href="<?= "views/includes/addformProjet.php?id=".$currentid ?>" class="btn-ajouter">
         <svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Ajouter un projet</title>
             <defs></defs>
