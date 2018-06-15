@@ -17,7 +17,7 @@ if(!isset($_SESSION["pseudo"])) {
     die();
 }
 
-echo '<a href="deconnexion.php">deco</a>';
+//echo '<a href="deconnexion.php">deco</a>';
 
 
 
@@ -28,13 +28,6 @@ if (isset($_GET['page']) AND !empty($_GET['page'])){
     $page = 'home';
 }
 
-//include_once '_functions/functions.php';
-//include_once '_classes/Client.php';
-//include_once '_classes/Projet.php';
-//$var = Projet::getAllProjet();
-
-//prettyDump($var);
-//exit;
 
 
 //scandir = scan tt les fichers dans un dossier

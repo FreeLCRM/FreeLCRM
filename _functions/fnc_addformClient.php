@@ -9,7 +9,7 @@
 $host = 'localhost:33';
 $user = 'root';
 $password = 'root';
-$dbname = 'phperlimpinpin';
+$dbname = 'freelcrm_db';
 
 $dsn = 'mysql:host='. $host .';dbname='. $dbname .';charset=utf8';
 

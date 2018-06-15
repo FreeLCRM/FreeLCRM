@@ -14,7 +14,7 @@
 
     </div>
     <div class="menu-left">
-        <svg class="svg-logo" width="45px" height="38px" viewBox="0 0 45 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a href="../../index.php"><svg class="svg-logo" width="45px" height="38px" viewBox="0 0 45 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Group</title>
             <desc>Created with Sketch.</desc>
             <defs>
@@ -37,10 +37,10 @@
                     </g>
                 </g>
             </g>
-        </svg>
+        </svg></a>
         <ul>
             <li>
-                <a href="#">
+                <a href="deconnexion.php">
                     <svg class="svg-menu-left" width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>User</title>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

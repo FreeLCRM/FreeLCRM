@@ -39,7 +39,7 @@ if(isset($_POST) && count($_POST) > 0)
 </head>
 <body>
 <?php include_once 'views/includes/head.php' ?>
-<?php include_once 'views/includes/header.php' ?>
+<?php /*include_once 'views/includes/header.php' */?>
 
 <div id="connexion-section">
     <div class="title">

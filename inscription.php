@@ -30,17 +30,17 @@ if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_p
 </head>
 <body>
 <?php include_once 'views/includes/head.php' ?>
-<?php include_once 'views/includes/header.php' ?>
+<?php /*include_once 'views/includes/header.php' */?>
 
 <div id="connexion-section">
     <div class="title">
         <h1>.freelcrm</h1>
     </div>
-    <div class="connexion-block">
-        <h1>Inscription</h1>
+    <div class="connexion-block" style="height: 580px;">
         <div class="input-inscription">
             <div class="verif"><?php if(isset($verif)){ echo $verif;} ?></div>
             <form action="" method="post" class="form-grid">
+                <h1>Inscription</h1>
                 <label class="label-css-input" for="pseudo">Pseudo</label>
                 <input class="input-css-text" type="text" name="pseudo" placeholder="Pseudo"><br>
 

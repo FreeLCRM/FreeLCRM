@@ -9,7 +9,7 @@
 $host = 'localhost:33';
 $user = 'root';
 $password = 'root';
-$dbname = 'phperlimpinpin';
+$dbname = 'freelcrm_db';
 
 $dsn = 'mysql:host='. $host .';dbname='. $dbname .';charset=utf8';
 
@@ -58,4 +58,4 @@ $stmt->execute(['idClient' => $idClient,
 
 $currentPage =  'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 //var_dump($currentPage);
-header('Location: ../index.php');
+header('Location: ../listproject?id='.$idClient);

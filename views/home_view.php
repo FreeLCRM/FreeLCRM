@@ -87,7 +87,7 @@
 
                    By passing fetched result as parameter. -->
 
-           <a href=<?= "/listproject?id=".$result['id'] ?>><div class="container-home$resultclient">
+           <a  href=<?= "/listproject?id=".$result['id'] ?>><div class="container-home-client">
            <table>
                <tr class="tr-accueil">
                    <th>Entreprise</th>
@@ -110,7 +110,7 @@
            <?php
             } else {
                 foreach ($allClient as $index => $client): ?>
-                <a href=<?= "/listproject?id=".$client['id'] ?>><div class="container-home-client">
+                <a style="color: #000;" href=<?= "/listproject?id=".$client['id'] ?>><div class="container-home-client">
                 <table>
                     <tr class="tr-accueil">
                         <th>Entreprise</th>
