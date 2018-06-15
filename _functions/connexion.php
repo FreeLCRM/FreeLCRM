@@ -1,12 +1,6 @@
 <?php
 require_once "connect.php";
 
-/**
- * Created by PhpStorm.
- * User: benchaa
- * Date: 01/05/2017
- * Time: 18:43
- */
 class Connexion
 {
 
