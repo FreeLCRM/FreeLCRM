@@ -1,6 +1,6 @@
 # FreeLCRM
 Open Source CRM designed for freelancers
-####sql structure: 
+#### sql structure: 
 ```
 -- phpMyAdmin SQL Dump
 -- version 4.4.15.5
